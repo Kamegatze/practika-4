@@ -1,0 +1,48 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#controls {
+    margin-right: 0.4rem;
+}
+#buttons {
+    margin: 0.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+button {
+    margin: 0.2rem;
+}
+label {
+    display: block;
+    margin: 0.4rem;
+}
+select {
+    width: 100%;
+}
+#gridContainer {
+    width: 700px;
+    height: 600px;
+    border: 1px dashed #222;
+    border-radius: 4px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: stretch;
+    align-items: stretch;
+}
+.grid-item {
+    background: radial-gradient(circle, yellow, orange);
+    border: 1px solid #222;
+    color: #222;
+    font-size: 2rem;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.grid-item.selected {
+    background: radial-gradient(circle, lightgreen, darkgreen);
+}

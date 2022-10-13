@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css-style/style.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<main>
+    <div id="controls">
+        <div id="buttons">
+            <button data-btn="addBtn">Add Item</button>
+            <button data-btn="removeBtn">Remove Item</button>
+        </div>
+        <fieldset id="gridContainerProps">
+            <legend>Grid Container Props</legend>
+            <label for="gridTemplateColumns">grid-template-columns</label>
+            <select id="gridTemplateColumns">
+                <option value="100px 50px 100px">100px 50px 100px</option>
+                <option value="50px 1fr 50px">50px 1fr 50px</option>
+                <option value="repeat(3, 100px)">repeat(3, 100px)</option>
+                <option value="repeat(3, 1fr)" selected>repeat(3, 1fr)</option>
+            </select>
+
+            <label for="gridTemplateRows">grid-template-rows</label>
+            <select id="gridTemplateRows">
+                <option value="100px 50px 100px">100px 50px 100px</option>
+                <option value="50px 1fr 50px">50px 1fr 50px</option>
+                <option value="repeat(3, 100px)">repeat(3, 100px)</option>
+                <option value="repeat(3, 1fr)" selected>repeat(3, 1fr)</option>
+            </select>
+
+            <label for="gap">gap</label>
+            <select id="gap">
+                <option value="normal" selected>normal</option>
+                <option value="5px">5px</option>
+                <option value="5px 20px">5px 20px</option>
+                <option value="5%">5%</option>
+                <option value="1em">1em</option>
+                <option value="calc(5% + 5px)">calc(5% + 5px)</option>
+            </select>
+
+            <label for="justifyContent">justify-content</label>
+            <select id="justifyContent">
+                <option value="center" selected>center</option>
+                <option value="start">start</option>
+                <option value="end">end</option>
+                <option value="stretch">stretch</option>
+                <option value="space-between">space-between</option>
+                <option value="space-around">space-around</option>
+                <option value="space-evenly">space-evenly</option>
+            </select>
+
+            <label for="alignContent">align-content</label>
+            <select id="alignContent">
+                <option value="center" selected>center</option>
+                <option value="start">start</option>
+                <option value="end">end</option>
+                <option value="stretch">stretch</option>
+                <option value="space-between">space-between</option>
+                <option value="space-around">space-around</option>
+                <option value="space-evenly">space-evenly</option>
+            </select>
+
+            <label for="justifyItems">justify-items</label>
+            <select id="justifyItems">
+                <option value="center" selected>center</option>
+                <option value="start">start</option>
+                <option value="end">end</option>
+                <option value="stretch">stretch</option>
+            </select>
+
+            <label for="alignItems">align-items</label>
+            <select id="alignItems">
+                <option value="center" selected>center</option>
+                <option value="start">start</option>
+                <option value="end">end</option>
+                <option value="stretch">stretch</option>
+            </select>
+
+            <label for="gridAutoFlow">grid-auto-flow</label>
+            <select id="gridAutoFlow">
+                <option value="row" selected>row</option>
+                <option value="column">column</option>
+                <option value="dense">dense</option>
+            </select>
+
+        </fieldset>
+
+        <fieldset id="gridItemProps">
+            <legend>Grid Item Props</legend>
+            <label for="justifySelf">justify-self</label>
+            <select id="justifySelf">
+                <option value="stretch" selected>stretch</option>
+                <option value="start">start</option>
+                <option value="end">end</option>
+                <option value="center">center</option>
+            </select>
+
+            <label for="alignSelf">align-self</label>
+            <select id="alignSelf">
+                <option value="stretch" selected>stretch</option>
+                <option value="start">start</option>
+                <option value="end">end</option>
+                <option value="center">center</option>
+            </select>
+        </fieldset>
+    </div>
+
+    <div id="gridContainer">
+        <div class="grid-item selected">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+    <script src="../js-file/index.js"></script>
+</main>>
+</body>
+</html>
